@@ -23,12 +23,12 @@ public class FizzBuzzTest {
 
     @Test
     public void should_return_fizz_when_input_is_divisible_by_6() throws Exception {
-        assertThat(fizzBuzz.run(6), is("Fizz"));
+        assertThat(fizzBuzz.run(9), is("Fizz"));
     }
 
     @Test
     public void should_return_buzz_when_input_is_divisible_by_5() throws Exception {
-        assertThat(fizzBuzz.run(10), is("Buzz"));
+        assertThat(fizzBuzz.run(5), is("Buzz"));
     }
 
     @Test
@@ -38,7 +38,7 @@ public class FizzBuzzTest {
 
     @Test
     public void should_return_hizz_when_input_is_divisible_both_by_2() throws Exception {
-        assertThat(fizzBuzz.run(4), is("hizz"));
+        assertThat(fizzBuzz.run(4), is("Hizz"));
     }
 
 
