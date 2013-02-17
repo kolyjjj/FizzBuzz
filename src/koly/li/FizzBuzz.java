@@ -2,15 +2,23 @@ package koly.li;
 
 public class FizzBuzz {
     public String run(int inputNumber) {
-    if (inputNumber % 3 == 0 && inputNumber % 5 == 0 ){
+    if (isDivisibleByThree(inputNumber) && isDivisibleByFive(inputNumber)){
         return "FizzBuzz";
     }
-    if (inputNumber % 3 == 0){
+    if (isDivisibleByThree(inputNumber)){
         return "Fizz";
     }
-    if (inputNumber % 5 == 0){
+    if (isDivisibleByFive(inputNumber)){
         return "Buzz";
     }
     return null;
+    }
+
+    private boolean isDivisibleByFive(int inputNumber) {
+        return inputNumber % 5 == 0;
+    }
+
+    private boolean isDivisibleByThree(int inputNumber) {
+        return inputNumber % 3 == 0;
     }
 }
