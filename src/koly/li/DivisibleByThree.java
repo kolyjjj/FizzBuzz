@@ -6,4 +6,8 @@ public class DivisibleByThree implements Divisible{
     public boolean by(int inputNumber) {
         return inputNumber % 3 ==0;
     }
+
+    public String getSpecifiedString() {
+        return "Fizz";
+    }
 }

@@ -4,7 +4,7 @@ public class FizzBuzz {
     public String run(int inputNumber) {
         StringBuilder result = new StringBuilder();
         if (new DivisibleByThree().by(inputNumber)) {
-            result.append("Fizz");
+            result.append(new DivisibleByThree().getSpecifiedString());
         }
         if (new DivisibleByFive().by(inputNumber)) {
             result.append("Buzz");
