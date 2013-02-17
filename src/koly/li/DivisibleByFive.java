@@ -6,4 +6,8 @@ public class DivisibleByFive implements Divisible{
     public boolean by(int inputNumber) {
         return inputNumber % 5 == 0;
     }
+
+    public String getSpecifiedString() {
+        return "Buzz";
+    }
 }

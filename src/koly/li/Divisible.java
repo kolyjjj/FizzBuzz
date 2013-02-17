@@ -1,5 +1,7 @@
 package koly.li;
 
 public interface Divisible {
-    public boolean by(int inputNumber);
+    boolean by(int inputNumber);
+
+    String getSpecifiedString();
 }

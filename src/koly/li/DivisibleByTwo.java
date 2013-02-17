@@ -5,4 +5,8 @@ public class DivisibleByTwo implements Divisible {
     public boolean by(int inputNumber) {
         return inputNumber % 2 == 0;
     }
+
+    public String getSpecifiedString() {
+        return "Hizz";
+    }
 }
