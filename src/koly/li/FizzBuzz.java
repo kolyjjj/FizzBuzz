@@ -9,7 +9,14 @@ public class FizzBuzz {
         if (isDivisibleByFive(inputNumber)) {
             result.append("Buzz");
         }
+        if (isDivisibleByTwo(inputNumber)){
+            result.append("Hizz");
+        }
         return result.toString();
+    }
+
+    private boolean isDivisibleByTwo(int inputNumber) {
+        return inputNumber % 2 == 0;
     }
 
     private boolean isDivisibleByFive(int inputNumber) {

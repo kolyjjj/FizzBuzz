@@ -30,8 +30,16 @@ public class FizzBuzzTest {
     public void should_return_buzz_when_input_is_divisible_by_5() throws Exception {
         assertThat(fizzBuzz.run(10), is("Buzz"));
     }
+
     @Test
     public void should_return_fizzbuzz_when_input_is_divisible_both_by_3_and_5() throws Exception {
         assertThat(fizzBuzz.run(15), is("FizzBuzz"));
     }
+
+    @Test
+    public void should_return_hizz_when_input_is_divisible_both_by_2() throws Exception {
+        assertThat(fizzBuzz.run(4), is("hizz"));
+    }
+
+
 }
