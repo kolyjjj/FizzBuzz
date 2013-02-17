@@ -6,10 +6,10 @@ public class FizzBuzz {
         if (new DivisibleByThree().by(inputNumber)) {
             result.append("Fizz");
         }
-        if (new DivisibleByFive().isDivisibleByFive(inputNumber)) {
+        if (new DivisibleByFive().by(inputNumber)) {
             result.append("Buzz");
         }
-        if (new DivisibleByTwo().isDivisibleByTwo(inputNumber)){
+        if (new DivisibleByTwo().by(inputNumber)){
             result.append("Hizz");
         }
         return result.toString();
