@@ -16,6 +16,12 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void should_return_empty_string_when_input_is_1() throws Exception {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertThat(fizzBuzz.run(1), is(""));
+    }
+
+    @Test
     public void should_return_fizz_when_input_is_divisible_by_3() throws Exception {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertThat(fizzBuzz.run(3), is("Fizz"));
