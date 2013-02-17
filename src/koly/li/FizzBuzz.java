@@ -7,7 +7,7 @@ public class FizzBuzz {
     public String run(int inputNumber) {
         this.inputNumber = inputNumber;
         StringBuilder result = new StringBuilder();
-        if (isDivisibleByThree()) {
+        if (DivisibleByThree.isDivisibleByThree(inputNumber)) {
             result.append("Fizz");
         }
         if (DivisibleByFive.isDivisibleByFive(inputNumber)) {
@@ -19,7 +19,4 @@ public class FizzBuzz {
         return result.toString();
     }
 
-    private boolean isDivisibleByThree() {
-        return inputNumber % 3 == 0;
-    }
 }
