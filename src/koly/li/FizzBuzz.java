@@ -17,15 +17,6 @@ public class FizzBuzz {
             }
 
         }
-//        if (new DivisibleByThree().by(inputNumber)) {
-//            result.append(new DivisibleByThree().getSpecifiedString());
-//        }
-//        if (new DivisibleByFive().by(inputNumber)) {
-//            result.append(new DivisibleByFive().getSpecifiedString());
-//        }
-//        if (new DivisibleByTwo().by(inputNumber)){
-//            result.append(new DivisibleByTwo().getSpecifiedString());
-//        }
         return result.toString();
     }
 
