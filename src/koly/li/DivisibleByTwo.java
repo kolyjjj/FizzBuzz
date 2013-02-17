@@ -1,7 +1,7 @@
 package koly.li;
 
-public class DivisibleByTwo {
-    public static boolean isDivisibleByTwo(int inputNumber) {
+public class DivisibleByTwo implements DivisibleBy {
+    public boolean isDivisibleByTwo(int inputNumber) {
         return inputNumber % 2 == 0;
     }
 }
