@@ -3,7 +3,7 @@ package koly.li;
 public class FizzBuzz {
     public String run(int inputNumber) {
         StringBuilder result = new StringBuilder();
-        if (new DivisibleByThree().isDivisibleByThree(inputNumber)) {
+        if (new DivisibleByThree().by(inputNumber)) {
             result.append("Fizz");
         }
         if (new DivisibleByFive().isDivisibleByFive(inputNumber)) {
