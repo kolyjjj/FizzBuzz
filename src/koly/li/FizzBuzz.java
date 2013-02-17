@@ -4,27 +4,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FizzBuzz {
-    public String run(int inputNumber) {
-        StringBuilder result = new StringBuilder();
-        List<Divisible> divisibleObjects = initilizeDivisibleObjects();
-        appendStrings(inputNumber, result, divisibleObjects);
-        return result.toString();
+
+    private List<Divisible> divisibleObjects = new ArrayList<Divisible>();
+
+    public FizzBuzz() {
+        initilizeDivisibleObjects();
     }
 
-    private void appendStrings(int inputNumber, StringBuilder result, List<Divisible> divisibleObjects) {
+    public String run(int inputNumber) {
+        return appendStrings(inputNumber, new StringBuilder());
+    }
+
+    private String appendStrings(int inputNumber, StringBuilder result) {
         for (Divisible d : divisibleObjects){
             if (d.by(inputNumber)){
                 result.append(d.getSpecifiedString());
             }
         }
+        return result.toString();
     }
 
-    private List<Divisible> initilizeDivisibleObjects() {
-        List<Divisible> divisibleObjects = new ArrayList<Divisible>();
+    private void initilizeDivisibleObjects() {
         divisibleObjects.add(new DivisibleByThree());
         divisibleObjects.add(new DivisibleByFive());
         divisibleObjects.add(new DivisibleByTwo());
-        return divisibleObjects;
     }
 
 }
