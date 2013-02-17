@@ -1,7 +1,7 @@
 package koly.li;
 
 public class FizzBuzz {
-    public String yunxing(int i) {
+    public String run(int i) {
     if (i % 3 == 0 && i % 5 == 0 ){
         return "FizzBuzz";
     }
